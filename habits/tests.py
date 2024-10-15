@@ -1,5 +1,3 @@
-from datetime import timedelta, datetime
-
 from django.urls import reverse
 from rest_framework import status
 from rest_framework.test import APITestCase, APIClient
@@ -108,7 +106,9 @@ class HabitTestCase(APITestCase):
                         "period": self.habit.period,
                         "duration": self.habit.duration,
                         "award": self.habit.award,
-                        "created_at": self.habit.created_at.strftime("%Y-%m-%dT%H:%M:%S.%fZ"),
+                        "created_at": self.habit.created_at.strftime(
+                            "%Y-%m-%dT%H:%M:%S.%fZ"
+                        ),
                         "owner": self.user.pk,
                         "related_habit": None
                     }
