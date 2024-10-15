@@ -1,8 +1,8 @@
 from django.urls import path
 
 from habits.apps import HabitsConfig
-from habits.views import HabitCreateAPIView, HabitListAPIView, HabitRetrieveAPIView, HabitUpdateAPIView, \
-    HabitDestroyAPIView, HabitPublishedListAPIView
+from habits.views import (HabitCreateAPIView, HabitListAPIView, HabitRetrieveAPIView,
+                          HabitUpdateAPIView, HabitDestroyAPIView, HabitPublishedListAPIView)
 
 app_name = HabitsConfig.name
 

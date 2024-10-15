@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from rest_framework import generics
 from rest_framework.permissions import IsAuthenticated
 
@@ -45,4 +44,3 @@ class HabitDestroyAPIView(generics.DestroyAPIView):
 class HabitPublishedListAPIView(generics.ListAPIView):
     serializer_class = HabitPublishedSerializer
     queryset = Habit.objects.filter(is_published=True)
-
