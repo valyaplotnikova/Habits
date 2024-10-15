@@ -12,9 +12,10 @@ class DurationValidator:
 
     def __call__(self, value):
         duration = dict(value).get(self.field)
-        duration_time = (duration.hour * 60 + duration.minute) * 60 + duration.second
-        if duration_time > 120:
-            raise serializers.ValidationError("Длительность привычки не может быть больше 120 секунд")
+        if duration:
+            duration_time = (duration.hour * 60 + duration.minute) * 60 + duration.second
+            if duration_time > 120:
+                raise serializers.ValidationError("Длительность привычки не может быть больше 120 секунд")
 
 
 class OnlyAwardOrRelatedValidator:
