@@ -1,0 +1,53 @@
+[
+  {
+    "model": "habits.habit",
+    "pk": 1,
+    "fields": {
+      "owner": 1,
+      "place": "at home",
+      "time": "13:00:00.300",
+      "action": "drink woter",
+      "nice_habit": false,
+      "is_published": false,
+      "related_habit": null,
+      "period": "daily",
+      "duration": "00:01:00",
+      "award": null,
+      "created_at": "2024-10-15T07:39:39.252Z"
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 2,
+    "fields": {
+      "owner": 1,
+      "place": "at work",
+      "time": "13:00:00.300",
+      "action": "drink coffee",
+      "nice_habit": false,
+      "is_published": true,
+      "related_habit": null,
+      "period": "daily",
+      "duration": "00:01:00",
+      "award": null,
+      "created_at": "2024-10-15T07:42:44.422Z"
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 3,
+    "fields": {
+      "owner": 1,
+      "place": "at work",
+      "time": "13:00:00.300",
+      "action": "drink coffee",
+      "nice_habit": false,
+      "is_published": true,
+      "related_habit": 1,
+      "period": "daily",
+      "duration": "00:01:00",
+      "award": null,
+      "created_at": "2024-10-15T08:46:04.242Z"
+    }
+  }
+]
