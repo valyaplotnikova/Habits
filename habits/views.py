@@ -4,7 +4,7 @@ from rest_framework.permissions import IsAuthenticated
 
 from habits.models import Habit
 from habits.pagination import MyPagination
-from habits.serializers import HabitSerializer
+from habits.serializers import HabitSerializer, HabitPublishedSerializer
 from users.permissions import IsOwner
 
 
@@ -43,7 +43,6 @@ class HabitDestroyAPIView(generics.DestroyAPIView):
 
 
 class HabitPublishedListAPIView(generics.ListAPIView):
-    serializer_class = HabitSerializer
+    serializer_class = HabitPublishedSerializer
     queryset = Habit.objects.filter(is_published=True)
-    pagination_class = MyPagination
 
