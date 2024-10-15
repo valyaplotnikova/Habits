@@ -1,0 +1,21 @@
+[
+  {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$870000$n4Qd9KKxlAZSoZsfQ6OTz4$feGGKTkL1QM82L2HMfdr+I7IqDmnTK/Py+KhQX3sswg=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-10-15T06:38:47.544Z",
+      "email": "admin@admin.ru",
+      "avatar": "",
+      "tg_chat_id": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]
