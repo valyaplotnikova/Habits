@@ -22,24 +22,24 @@ class HabitListAPIView(generics.ListAPIView):
     serializer_class = HabitSerializer
     queryset = Habit.objects.all()
     pagination_class = MyPagination
-    permission_classes = (IsAuthenticated, IsOwner)
+    permission_classes = (IsOwner,)
 
 
 class HabitRetrieveAPIView(generics.RetrieveAPIView):
     serializer_class = HabitSerializer
     queryset = Habit.objects.all()
-    permission_classes = (IsAuthenticated, IsOwner)
+    permission_classes = (IsOwner,)
 
 
 class HabitUpdateAPIView(generics.UpdateAPIView):
     serializer_class = HabitSerializer
     queryset = Habit.objects.all()
-    permission_classes = (IsAuthenticated, IsOwner)
+    permission_classes = (IsOwner,)
 
 
 class HabitDestroyAPIView(generics.DestroyAPIView):
     queryset = Habit.objects.all()
-    permission_classes = (IsAuthenticated, IsOwner)
+    permission_classes = (IsOwner,)
 
 
 class HabitPublishedListAPIView(generics.ListAPIView):
